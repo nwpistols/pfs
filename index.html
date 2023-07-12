@@ -54,14 +54,15 @@ p {
     <p>Remember to regularly update these documents to ensure a smoother qualification process when you're ready to move forward with a business purchase.</p>
    <button id="print-button" onclick="window.print()">Print this page <i class="fas fa-print"></i></button>
 </div>
-<script src="https://cloud.openchat.so/chat.js"></script>
+<script src="https://cloud.openchat.so/search.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var chatConfig = {
-    token: "SDFa7N4spu5nXjDdeGMa",
-    };
-    initializeChatWidget(chatConfig);
-});
+window.onload = () => {
+    initilizeChatBot({
+        initialFirstMessage: "Hello, Search OpenChat resources here.",
+        token: "TKuGzJDmz727J65nmGJs",
+        //initiatorId: "search-openchat" // provide a unique id for the search widget if you want to have custom button
+    });
+};
 </script>
 </body>
 </html>
