@@ -1,155 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personal Financial Statement</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        form {
-            background-color: #fff;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        form div {
-            margin-bottom: 10px;
-        }
-        form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        form input[type="text"],
-        form input[type="number"] {
-            width: 100%;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        form input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-        form input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        @media print {
-            body * {
-                visibility: hidden;
-            }
-            form, form * {
-                visibility: visible;
-            }
-            form {
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-        }
-    </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+body {
+    background: #f5f5f5;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 60%;
+}
+
+h2 {
+  color: #4285F4;
+}
+
+p {
+  color: #666;
+}
+
+</style>
 </head>
 <body>
-    <h1>Personal Financial Statement</h1>
-    <form>
-        <h2>Personal Information</h2>
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address">
-        </div>
-        <div>
-            <label for="contact">Contact Information:</label>
-            <input type="text" id="contact" name="contact">
-        </div>
-        
-        <h2>Assets</h2>
-        <div>
-            <label for="cash">Cash on hand and in banks:</label>
-            <input type="number" id="cash" name="cash">
-        </div>
-        <div>
-            <label for="realEstate">Real Estate Owned:</label>
-            <input type="number" id="realEstate" name="realEstate">
-        </div>
-        <div>
-            <label for="investments">Investments:</label>
-            <input type="number" id="investments" name="investments">
-        </div>
-        <div>
-            <label for="personalProperty">Personal Property:</label>
-            <input type="number" id="personalProperty" name="personalProperty">
-        </div>
-        <div>
-            <label for="otherAssets">Other Assets:</label>
-            <input type="number" id="otherAssets" name="otherAssets">
-        </div>
-        
-        <h2>Liabilities</h2>
-        <div>
-            <label for="accountsPayable">Accounts Payable:</label>
-            <input type="number" id="accountsPayable" name="accountsPayable">
-        </div>
-        <div>
-            <label for="notesPayable">Notes Payable to Banks and Others:</label>
-            <input type="number" id="notesPayable" name="notesPayable">
-        </div>
-        <div>
-            <label for="mortgages">Mortgages on Real Estate:</label>
-            <input type="number" id="mortgages" name="mortgages">
-        </div>
-        <div>
-            <label for="unpaidTaxes">Unpaid Taxes:</label>
-            <input type="number" id="unpaidTaxes" name="unpaidTaxes">
-        </div>
-        <div>
-            <label for="otherLiabilities">Other Liabilities:</label>
-            <input type="number" id="otherLiabilities" name="otherLiabilities">
-        </div>
-        
-        <h2>Net Worth Calculation</h2>
-        <div>
-            <label for="totalAssets">Total Assets:</label>
-            <input type="number" id="totalAssets" name="totalAssets">
-        </div>
-        <div>
-            <label for="totalLiabilities">Total Liabilities:</label>
-            <input type="number" id="totalLiabilities" name="totalLiabilities">
-        </div>
-        <div>
-            <label for="netWorth">Net Worth:</label>
-            <input type="number" id="netWorth" name="netWorth">
-        </div>
-        
-        <h2>Income</h2>
-        <div>
-            <label for="annualIncome">Annual Income:</label>
-            <input type="number" id="annualIncome" name="annualIncome">
-        </div>
-        
-        <h2>Expenses</h2>
-        <div>
-            <label for="annualExpenses">Annual Expenses:</label>
-            <input type="number" id="annualExpenses" name="annualExpenses">
-        </div>
-        
-        <input type="submit" value="Submit">
-    </form>
-    <button onclick="window.print()">Print to PDF</button>
+<div class="container">
+    <h2><img src='https://raw.githubusercontent.com/nwpistols/pfs/d04c6d97bb2d1133dca80b557ce7aac5993f0ca0/artboard.png' alt='AI Note Consulting logo' height='32px' style='margin-bottom: 10px'> Biz Pre-Qual Checklist</h2>
+    <ol>
+        <li><strong>Personal Financial Statement (PFS):</strong> Provide an up-to-date record of your financial position. This should detail your assets, liabilities, real estate holdings, and investments.</li>
+        <li><strong>Credit Report:</strong> Obtain your most recent credit report. A strong credit score is essential to demonstrate your financial responsibility.</li>
+        <li><strong>Proof of Liquid Assets:</strong> Provide the last 60 days of bank statements or documents proving your readily accessible cash or assets that can be quickly converted into cash such as money market accounts, stocks, etc.</li>
+        <li><strong>Income Verification:</strong> Include your most recent paystub, W-2 form, or tax return as proof of your stable income.</li>
+        <li><strong>Personal Identification Documents:</strong> Have scanned copies of your passport, driver's license, or any other government-issued ID for identity verification.</li>
+        <li><strong>Business Experience and Resume:</strong> Include an up-to-date resume or documentation showcasing your relevant experience in your industry of interest or in business management.</li>
+        <li><strong>References:</strong> Prepare a list of personal and professional references who can vouch for your character, reliability, and financial stability.</li>
+        <li><strong>Statement of Intent or Interest:</strong> Write a brief description outlining your intentions and motivations for buying a business. This statement should convey your serious intent about the purchase.</li>
+        <li><strong>Deal Summary:</strong> Summarize the type of deal you're interested in, including industry, size of business, your role post-acquisition, and general terms you would consider.</li>
+     </ol>
+    <p>Remember to regularly update these documents to ensure a smoother qualification process when you're ready to move forward with a business purchase.</p>
+</div>
+<script src="https://cloud.openchat.so/chat.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var chatConfig = {
+    token: "SDFa7N4spu5nXjDdeGMa",
+    };
+    initializeChatWidget(chatConfig);
+});
+</script>
 </body>
 </html>
